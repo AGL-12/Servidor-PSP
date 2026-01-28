@@ -1,0 +1,13 @@
+# Android
+.gradle/
+build/
+local.properties
+.cxx/
+*.iml
+.idea/
+
+# Java / Spring Boot
+target/
+out/
+*.class
+
