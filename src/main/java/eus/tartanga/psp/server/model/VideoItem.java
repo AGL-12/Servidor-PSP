@@ -4,7 +4,7 @@ public class VideoItem {
 	private Long id;
 	private String titulo;
 	private String descripcion;
-	private String urlYoutube; // Ej: "https://youtu.be/..."
+	private String nombreArchivo; // Ej: "trailer_gta.mp4"
 
 	public VideoItem() {
 	}
@@ -13,7 +13,7 @@ public class VideoItem {
 		this.id = id;
 		this.titulo = titulo;
 		this.descripcion = descripcion;
-		this.urlYoutube = urlYoutube;
+		this.nombreArchivo = urlYoutube;
 	}
 
 	// Getters y Setters...
@@ -41,11 +41,11 @@ public class VideoItem {
 		this.descripcion = descripcion;
 	}
 
-	public String getUrlYoutube() {
-		return urlYoutube;
+	public String getNombreArchivo() {
+		return nombreArchivo;
 	}
 
-	public void setUrlYoutube(String urlYoutube) {
-		this.urlYoutube = urlYoutube;
+	public void setNombreArchivo(String nombreArchivo) {
+		this.nombreArchivo = nombreArchivo;
 	}
 }

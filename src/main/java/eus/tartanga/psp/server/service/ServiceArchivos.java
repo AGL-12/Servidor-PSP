@@ -311,6 +311,8 @@ public class ServiceArchivos {
 			sub = "apks";
 		} else if (nombre.endsWith(".mp3") || nombre.endsWith(".wav")) {
 			sub = "audios"; // <--- NUEVA CARPETA
+		}else if (nombre.endsWith(".mp4") || nombre.endsWith(".mov") || nombre.endsWith(".avi")) {
+			sub = "videos"; // <--- NUEVA LÓGICA PARA VIDEOS
 		} else {
 			// Si es imagen, puede ser de un juego (carpeta imagenes) o de la galería
 			// (carpeta galeria_files)

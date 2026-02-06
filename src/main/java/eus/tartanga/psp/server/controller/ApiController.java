@@ -74,6 +74,8 @@ public class ApiController {
 			contentType = "image/png";
 		} else if (nombre.endsWith(".jpg") || nombre.endsWith(".jpeg")) {
 			contentType = "image/jpeg";
+		}else if (nombre.endsWith(".mp4")) {
+			contentType = "video/mp4";
 		}
 
 		return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, contentType)
